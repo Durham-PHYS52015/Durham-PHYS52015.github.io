@@ -6,8 +6,8 @@ title: "MPI: more point to point"
 
 <div class="center">
 
-[Notes](/phys52015/notes/mpi/point-to-point/) and
-[more](/phys52015/notes/mpi/point-to-point-nb/)
+[Notes](/notes/mpi/point-to-point/) and
+[more](/notes/mpi/point-to-point-nb/)
 
 </div>
 
@@ -32,7 +32,7 @@ MPI_Send(data, 10, MPI_INT, 4, 0, MPI_COMM_WORLD);
 - `MPI_Send` is _blocking_
   - That means it waits until the buffer you pass in is safe to reuse
 
-![Sketch of `MPI_Send`](/phys52015/images/manual/mpi-ssend-cartoon.svg)
+![Sketch of `MPI_Send`](/images/manual/mpi-ssend-cartoon.svg)
 
 
 --->
@@ -60,7 +60,7 @@ MPI_Send(data, 10, MPI_INT, 4, 0, MPI_COMM_WORLD);
 
 ### `MPI_Bsend`
 
-![Sketch of `MPI_Bsend`](/phys52015/images/manual/mpi-bsend-cartoon.svg)
+![Sketch of `MPI_Bsend`](/images/manual/mpi-bsend-cartoon.svg)
 
 
 --->
@@ -72,7 +72,7 @@ MPI_Send(data, 10, MPI_INT, 4, 0, MPI_COMM_WORLD);
   - Switches to `MPI_Ssend` if not 
 - **No minimum buffer size is guaranteed**
 
-[Example: ptp deadlock](/phys52015/notes/mpi/point-to-point/#deadlock-exercise)
+[Example: ptp deadlock](/notes/mpi/point-to-point/#deadlock-exercise)
 
 --->
 
@@ -86,7 +86,7 @@ MPI_Send(data, 10, MPI_INT, 4, 0, MPI_COMM_WORLD);
 
 2. My communication pattern is more complicated
 
-    - [Non-blocking messages](/phys52015/notes/mpi/point-to-point-nb/)
+    - [Non-blocking messages](/notes/mpi/point-to-point-nb/)
 
 
 ------
@@ -131,7 +131,7 @@ if (flag) {
 
 ### Picture
 
-![Sketch of `MPI_Isend`](/phys52015/images/manual/mpi-issend-cartoon.svg)
+![Sketch of `MPI_Isend`](/images/manual/mpi-issend-cartoon.svg)
 
 --->
 
@@ -183,7 +183,7 @@ if (rank == 0) {
 
 ## Communication performance, network latency
 
-- In the [ping-pong exercise](/phys52015/exercises/mpi-ping-pong/)
+- In the [ping-pong exercise](/exercises/mpi-ping-pong/)
   build a simple model for message time
   
 $$
@@ -197,7 +197,7 @@ $$
 
 ### Last year's results
 
-![Ping pong timing](/phys52015/images/auto/ping-pong-timing-lots.svg)
+![Ping pong timing](/images/auto/ping-pong-timing-lots.svg)
 
 --->
 
@@ -291,6 +291,6 @@ MPI_Waitall(..., requests);
 
 ## Exercises
 
-- [MPI ping pong](/phys52015/exercises/mpi-ping-pong/)
-- [Gather to zero](/phys52015/notes/mpi/point-to-point-nb/)
-- [Halo exchanges](/phys52015/exercises/mpi-stencil/) This one is harder
+- [MPI ping pong](/exercises/mpi-ping-pong/)
+- [Gather to zero](/notes/mpi/point-to-point-nb/)
+- [Halo exchanges](/exercises/mpi-stencil/) This one is harder

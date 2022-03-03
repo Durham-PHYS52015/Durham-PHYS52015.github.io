@@ -6,7 +6,7 @@ title: "MPI: beginnings"
 
 <div class="center">
 
-[Introductory notes](/phys52015/notes/mpi/)
+[Introductory notes](/notes/mpi/)
 
 </div>
 
@@ -24,11 +24,11 @@ title: "MPI: beginnings"
 
 Threads share memory
 
-![Threads share memory](/phys52015/images/manual/shared-memory-sketch.svg)
+![Threads share memory](/images/manual/shared-memory-sketch.svg)
 
 Processes don't
 
-![Processes don't share memory](/phys52015/images/manual/processes-private-memory-sketch.svg)
+![Processes don't share memory](/images/manual/processes-private-memory-sketch.svg)
 
 ------
 
@@ -111,7 +111,7 @@ int main(int argc, char **argv)
 ## Communicators
 
 - Messages are passed in context of a
-  [_communicator_](/phys52015/notes/mpi/#communicators)
+  [_communicator_](/notes/mpi/#communicators)
 - Represent a group of processes
 - Processes identified by `(communicator, rank)` pair
 - Communicators available on startup
@@ -123,7 +123,7 @@ int main(int argc, char **argv)
 ## Example with eight processes
 
 ![Illustration of communicators on eight
-processes](/phys52015/images/manual/comm-world-comm-self.svg)
+processes](/images/manual/comm-world-comm-self.svg)
 
 ------
 

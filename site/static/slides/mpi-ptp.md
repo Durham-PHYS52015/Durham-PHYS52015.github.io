@@ -6,7 +6,7 @@ title: "MPI: point to point"
 
 <div class="center">
 
-[Notes](/phys52015/notes/mpi/point-to-point)
+[Notes](/notes/mpi/point-to-point)
 
 </div>
 
@@ -156,13 +156,13 @@ if (rank == 0) {
 - Deadlock (both waiting for a receive to appear)
 
 - Exercise:
-  [deadlocks](/phys52015/notes/mpi/point-to-point/#deadlock-exercise)
+  [deadlocks](/notes/mpi/point-to-point/#deadlock-exercise)
   
 ---
 
 ## Over to you
 
-- MPI [hello world](/phys52015/exercises/hello/#mpi)
+- MPI [hello world](/exercises/hello/#mpi)
 - Exercises in [point to point
-  notes](/phys52015/notes/mpi/point-to-point/)
-- Messages [around a ring](/phys52015/exercises/mpi-ring/)
+  notes](/notes/mpi/point-to-point/)
+- Messages [around a ring](/exercises/mpi-ring/)

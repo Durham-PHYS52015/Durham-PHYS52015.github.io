@@ -27,7 +27,7 @@ Brief course overview
   - Do participate in hands-on stuff: work together!
 - Reusing Scientific Computing slack channel (see
   [blackboard](https://blackboard.durham.ac.uk/ultra/courses/_5721_1/outline)).
-- Course webpage [`teaching.wence.uk/phys52015/`](https://teaching.wence.uk/phys52015/)
+- Course webpage [`durham-phys52015.github.io`](https://durham-phys52015.github.io)
 
 ------
 
@@ -42,8 +42,6 @@ Brief course overview
 ## Assessment
 
 - One piece of summative coursework
-- Rubric already
-  [available](https://teaching.wence.uk/phys52015/coursework/)
 - No _formal_ formative work, but the exercises and questions will
   prepare you
 - Exercises require _not just code_, but interpreting results

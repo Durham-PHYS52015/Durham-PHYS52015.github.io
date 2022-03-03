@@ -6,7 +6,7 @@ title: "MPI: more point to point"
 
 <div class="center">
 
-[Notes](/phys52015/notes/mpi/collectives/)
+[Notes](/notes/mpi/collectives/)
 
 </div>
 
@@ -65,12 +65,12 @@ void norm(double *x, int n, double *result)
 - No, why not?
   - Each process only has _part_ of the vector
   ![Sketch of parallel
-  summation](/phys52015/images/manual/vec-sum-sketch.svg)
+  summation](/images/manual/vec-sum-sketch.svg)
   - Need to _combine_ partial results
   
 --->
 
-### But I [already did that](/phys52015/exercises/mpi-ring/)!
+### But I [already did that](/exercises/mpi-ring/)!
 
 - Implemented the combine step in the "messages around a ring"
   exercise
@@ -121,7 +121,7 @@ $$
 - Classic example of divide-and-conquer turning a linear algorithm
   into a logarithmic one
 
-![Tree reduction](/phys52015/images/manual/mpi-tree-reduce.svg)
+![Tree reduction](/images/manual/mpi-tree-reduce.svg)
 
 
 --->
@@ -169,7 +169,7 @@ $$
 
 - Simple case not too difficult
   - This is what [the
-    coursework](/phys52015/coursework//#task-implement-tree_allreduce)
+    coursework](/coursework//#task-implement-tree_allreduce)
     asks you to do
 - General cases harder
   - Depending on network, a hypercube reduction might be faster
@@ -193,7 +193,7 @@ int MPI_Allreduce(const void *sendbuf, void *recvbuf,
                   MPI_Op op, MPI_Comm comm);
 ```
 
-![Sketch of allreduce](/phys52015/images/manual/mpi-allreduce.svg)
+![Sketch of allreduce](/images/manual/mpi-allreduce.svg)
 
 --->
 
@@ -203,7 +203,7 @@ int MPI_Scan(const void *sendbuf, void *recvbuf,
              MPI_Op op, MPI_Comm comm);
 ```
 
-![Sketch of scan](/phys52015/images/manual/mpi-scan.svg)
+![Sketch of scan](/images/manual/mpi-scan.svg)
 
 --->
 
@@ -231,7 +231,7 @@ int MPI_Bcast(void *buffer,
               int root, MPI_Comm comm);
 ```
 
-![Sketch of broadcast](/phys52015/images/manual/mpi-bcast.svg)
+![Sketch of broadcast](/images/manual/mpi-bcast.svg)
 
 --->
 
@@ -266,7 +266,7 @@ int MPI_Scatter(const void *sendbuf,
 
 --->
 
-![Sketch of scatter](/phys52015/images/manual/mpi-scatter.svg)
+![Sketch of scatter](/images/manual/mpi-scatter.svg)
 
 --->
 
@@ -285,19 +285,19 @@ int MPI_Gather(const void *sendbuf,
 
 --->
 
-![Sketch of gather](/phys52015/images/manual/mpi-gather.svg)
+![Sketch of gather](/images/manual/mpi-gather.svg)
 
 ------
 
 ## And more ...
 
 - Additional collectives for all-to-all communication
-- See [notes](/phys52015/notes/mpi/collectives/) for more details
+- See [notes](/notes/mpi/collectives/) for more details
 - Not touched on
   - "Neighbourhood collectives"
   - "Vector" versions of Scatter/Gather where everyone sends a
     different amount of data: [image reconstruction
-    exercise](/phys52015/exercises/mpi-stencil/)
+    exercise](/exercises/mpi-stencil/)
     
 ------
 
@@ -306,12 +306,12 @@ int MPI_Gather(const void *sendbuf,
 - MPI offers a rich array of _collectives_
 - "Symmetric": every process in the provided communicator participates
 - Can [manipulate
-    communicators](/phys52015/notes/mpi/advanced/#communicators) to
+    communicators](/notes/mpi/advanced/#communicators) to
     split/combine
 
 Exercises:
-- [Simple collectives](/phys52015/exercises/mpi-collectives/)
-- [Domain decomposition](/phys52015/exercises/mpi-stencil/)
+- [Simple collectives](/exercises/mpi-collectives/)
+- [Domain decomposition](/exercises/mpi-stencil/)
 
 ------
 
@@ -328,7 +328,7 @@ Exercises:
 
 ### Coursework
 
-- Has been available [for a while](/phys52015/coursework/)
+- Has been available [for a while](/coursework/)
 - Submission deadline 10th January
 - Two implementation parts
   1. OpenMP (parallel Gauss-Seidel)
