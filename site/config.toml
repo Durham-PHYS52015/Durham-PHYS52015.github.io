@@ -1,4 +1,4 @@
-baseURL = 'https://teaching.wence.uk/phys52015/'
+baseURL = 'https://durham-phys52015.github.io'
 DefaultContentLanguage = 'en'
 Language = 'en'
 title = 'PHYS52015 – Introduction to HPC'
@@ -32,7 +32,7 @@ BookSearch = false
 BookComments = false
 BookToc = true
 BookLogo = 'logo.svg'
-BookRepo = 'https://github.com/wenceorg/phys52015'
+BookRepo = 'https://github.com/Durham-PHYS52015/Durham-PHYS52015.github.io'
 ModulePage = 'https://www.dur.ac.uk/postgraduate.modules/module_description/?year=2021&module_code=PHYS52015'
 BookEditPath = 'edit/main'
 contentDir = 'site/content'
